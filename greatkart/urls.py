@@ -19,6 +19,7 @@ from django.urls import path,include
 from django.conf.urls.static import static
 from greatkart import views
 from django.conf import settings
+from django.conf.urls import handler404
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,3 +29,9 @@ urlpatterns = [
     path('accounts/',include('accounts.urls')),
     path('orders/',include('orders.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+
+
+# Custom 404 handler
+# handler404 = 'accounts.views.custom_404'

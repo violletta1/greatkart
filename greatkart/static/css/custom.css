@@ -59,3 +59,12 @@
     height: 80px;
     border: 1px solid grey;
   }
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #000; /* Black border, change color as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
