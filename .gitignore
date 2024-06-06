@@ -142,7 +142,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
+/env
+.myenv
+myenv/
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -175,3 +177,7 @@ cython_debug/
 #.idea/
 
 # End of https://www.toptal.com/developers/gitignore/api/django
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
