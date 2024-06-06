@@ -12,8 +12,9 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 import os
 from pathlib import Path
-from decouple import config
-
+# from decouple import config
+from dotenv import load_dotenv
+load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -27,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # Debug
 DEBUG = os.environ.get('DEBUG', 'True').lower() == 'true'  # Convert to boolean
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = [*]
 
 
 # Application definition
