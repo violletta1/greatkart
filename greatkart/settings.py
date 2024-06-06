@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # Debug
 DEBUG = os.environ.get('DEBUG', 'True').lower() == 'true'  # Convert to boolean
 
-ALLOWED_HOSTS = [*]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
